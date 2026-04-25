@@ -182,16 +182,23 @@ ul.addEventListener('click', e=>e.stopPropagation())
 
 
 const categoriesMenu = document.querySelector('.categoriesMenu');
-const sidebarBox = document.querySelector('.sidebar-box');
+const sidebar = document.querySelector('.sidebar');
 const closeCategory = document.querySelector('#closeCategory');
 
 categoriesMenu.addEventListener('click', () => {
-    sidebarBox.style.left = 0;
+    sidebar.style.left = 0;
 });
 
 closeCategory.addEventListener('click', () => {
-    sidebarBox.style.left = "-300px";
+    sidebar.style.left = "-1500px";
 });
+
+sidebar.addEventListener('click', () => {
+    sidebar.style.left = "-1500px";
+});
+
+
+
 
 
 
