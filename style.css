@@ -517,6 +517,21 @@ header .xmark {
 }
 
 
+.buttons {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7rem;
+}
+
+@media (max-width: 500px) {
+    .buttons {
+       
+        gap: 2rem;
+    }
+}
+
 
 
 
@@ -546,13 +561,4 @@ header .xmark {
     text-align: center;
     padding: 10px;
     border-radius: 5px;
-}
-
-
-.buttons {
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 7rem;
 }
